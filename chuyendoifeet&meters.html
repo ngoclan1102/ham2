@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label><input type="number" placeholder="feet" id="fet"></label>
+<label><button onclick="foot()">click</button></label>
+<p id="fot"></p><br><br>
+<label><input type="number" placeholder="meters" id="met"></label>
+<label><button onclick="show()">click</button></label>
+<p id="demo"></p>
+
+<script>
+    function foot() {
+        let a = document.getElementById('fet').value;
+        if (a>0) {
+            feet =3.279 * a
+            document.getElementById('fot').innerText =  feet
+        }
+    }function show() {
+        let a = document.getElementById('met').value;
+        if (a>0) {
+            meters =0.305 * a
+            document.getElementById('demo').innerText = meters
+        }
+    }
+
+</script>
+</body>
+</html>

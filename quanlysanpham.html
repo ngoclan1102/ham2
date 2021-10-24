@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Add New Product</h2>
+<input type="text" placeholder="New Product" id="product">
+<button onclick="display()">Add</button>
+<table>
+    <tr>
+        <td id="demo"></td>
+<td id="click1"></td>
+        <td id="click2"></td>
+    </tr>
+
+    <script>
+        function display() {
+            let a = document.getElementById('product').value;
+            let array = new Array(a);
+            for (let i = 0; i < array.length; i++) {
+            //     let taoTheP = document.createElement("p");
+            //     let noidungTheP = document.createTextNode(array[i]);
+            //     taoTheP.appendChild(noidungTheP);
+            //     let element = document.getElementById("demo");
+            //     element.appendChild(taoTheP);
+            //
+            //     let button = document.createElement("div");
+            //     button.innerHTML =  '<td><button type="button" onclick="click1">Edit</button></td>\n' +
+            //         '<td><button type="button" onclick="click2">Delete</button></td>';
+            //     taoTheP.after(button);
+                document.getElementById("demo").innerText = array[i]
+                //     document.getElementById('click1').innerText= <button>Edit</button>
+                // document.getElementById('click2').innerText= <button>Detele</button>
+
+            }
+        }
+    </script>
+</table>
+</body>
+</html>

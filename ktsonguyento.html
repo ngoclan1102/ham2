@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt('enter a number :'))
+    // if (number<2) {
+    //     alert(number + ' khong phai so nguyen to')
+    // }else if (number===2) {
+    //     alert(number + 'la so nguyen to')
+    // }if (number>2){
+    //     for (let i = 2; i <number-1 ; i++) {
+    //         if (number%i===0) {
+    //             alert(number + ' khong phai so nguyen to')
+    //             break;
+    //         }else {
+    //             alert(number + ' la so nguyen to')
+    //             break;
+    //         }
+    //     }
+    // }
+
+    function isPrime(a) {
+        if (a<2) {
+            alert(a + ' khong phai so nguyen to')
+        }else if (a===2) {
+            alert(a + 'la so nguyen to')
+        }if (a>2){
+            for (let i = 2; i <a-1 ; i++) {
+                if (a%i===0) {
+                    alert(a + ' khong phai so nguyen to')
+                    break;
+                }else {
+                    alert(a + ' la so nguyen to')
+                    break;
+                }
+            }
+        }
+    }
+isPrime(number)
+</script>
+</body>
+</html>
